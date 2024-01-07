@@ -1,0 +1,18 @@
+
+curl 'https://risk-strategy-us.testdev.ltd/frank-api/grana/indicator/list' \
+  -H 'authority: risk-strategy-us.testdev.ltd' \
+  -H 'accept: */*' \
+  -H 'accept-language: zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7' \
+  -H 'content-type: application/json' \
+  -H 'cookie: srefid=CmEs42TnW6a0fgBRBe15Ag==; stuser=oak.shao; gatewaysession=0a580afffe612ba3-00000001-00da41ec-6493912edbdeeb3e-43ea606e; JSESSIONID=20A8D071BC6A2920D358BC4492DC6946; st=2lhx5oG4f5pYlN47lgR6SJmZr6ydUSJqOOdDVkbqWvdHh1CBJGtoh9I9uOowvEJp-testdev.ltd' \
+  -H 'origin: https://risk-strategy-us.testdev.ltd' \
+  -H 'sec-ch-ua: "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "macOS"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36' \
+  -H 'x-access-token: 45ce23f0-28c2-4603-ae2a-328f73ee0617' \
+  --data-raw '{}' \
+  --compressed
