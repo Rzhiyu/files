@@ -1,0 +1,222 @@
+time="2024-01-26T08:17:43Z" level=info msg="cmds:[/bin/bash start.sh]"
+time="2024-01-26T08:17:43Z" level=info msg="Exec /bin/bash [/bin/bash start.sh]"
+chown: /mnt/logs: No such file or directory
+chown: /mnt/tracker: No such file or directory
+[allspark-agent] Agent is starting...
+load appenv from [/data/webapps/appenv], properties:{monitorkeepergateway=monitor-keeper-gateway.smart.ddns.temu.team, leohttpserver=10.108.8.11:14885, set=usm1, catserver=cat-consumer.cat-consumer-us-usm1.hg.ddns.temu.team, leoserveragent=10.108.8.11:14880, palsserver=auth-server.smart.ddns.temu.team, leo2server=leo2-service.smart.ddns.temu.team, idc=usm1, deployenv=usm1, env=prod, core_ns=10.108.1.99:2021,10.108.1.100:2021,10.108.39.26:2021,10.108.39.27:2021, dr=us, internal_ip=10.110.185.72, hostname=vam1-aknode-42260.host.temu.team, leoserver=10.108.8.11:14880, pddenv=prod, domain=temu.com, dc=vam1} 
+16:17:47.606 [main] INFO  c.p.arch.allspark.core.CoreBootstrap - [allspark-agent] - Agent core initialized, version: 1.3.3.RELEASE
+[36m
+================================================================================================
+[32m
+
+      ___         ___         ___           ___           ___           ___           ___     
+     /  /\       /  /\       /  /\         /  /\         /  /\         /  /\         /  /\    
+    /  /::\     /  /:/      /  /::\       /  /::\       /  /:/        /  /:/_       /  /::\   
+   /  /:/\:\   /  /:/      /  /:/\:\     /  /:/\:\     /  /:/        /  /:/ /\     /  /:/\:\  
+  /  /:/~/:/  /  /::\     /  /:/~/:/    /  /:/~/::\   /  /:/  ___   /  /:/ /:/_   /  /:/~/:/  
+ /__/:/ /:/  /__/:/\:\   /__/:/ /:/___ /__/:/ /:/\:\ /__/:/  /  /\ /__/:/ /:/ /\ /__/:/ /:/___
+ \  \:\/:/   \__\/  \:\  \  \:\/:::::/ \  \:\/:/__\/ \  \:\ /  /:/ \  \:\/:/ /:/ \  \:\/:::::/
+  \  \::/         \  \:\  \  \::/~~~~   \  \::/       \  \:\  /:/   \  \::/ /:/   \  \::/~~~~ 
+   \  \:\          \__\/   \  \:\        \  \:\        \  \:\/:/     \  \:\/:/     \  \:\     
+    \  \:\                  \  \:\        \  \:\        \  \::/       \  \::/       \  \:\    
+     \__\/                   \__\/         \__\/         \__\/         \__\/         \__\/    
+[36m
+ PTRACER AGENT Version     : 1.5.2.RC5
+ PTRACER AGENT Build Date  : 2023-07-17 13:43:53
+ PTRACER AGENT Path        : allspark/agent/taishan.jar
+ PTRACER AGENT Open.TTL    : true
+ PTRACER AGENT Open.Trace  : true
+ PTRACER AGENT Set Prop    : [ jmx.mxbean.multiname : true ]
+ PTRACER [TRACE] 启动中....
+ PTRACER [TRACE] 上下文类加载器：sun.misc.Launcher$AppClassLoader@18b4aac2
+[main] INFO PTRACER - [INITIAL.prepare] Event	=	com.pdd.service.ptracer.boot.impl.initial.EventContextInitializer
+[main] INFO PTRACER - [INITIAL.prepare] InheritThread	=	com.pdd.service.ptracer.boot.impl.initial.InheritThreadContextInitializer
+[main] INFO PTRACER - [INITIAL.prepare] GsonSerializer	=	com.pdd.service.ptracer.boot.impl.initial.SerializerContextInitializer
+[main] INFO PTRACER - [INITIAL.boot] Event	=	com.pdd.service.ptracer.boot.impl.initial.EventContextInitializer
+[main] INFO PTRACER - [INITIAL.boot] InheritThread	=	com.pdd.service.ptracer.boot.impl.initial.InheritThreadContextInitializer
+[main] INFO PTRACER - [INITIAL.boot] GsonSerializer	=	com.pdd.service.ptracer.boot.impl.initial.SerializerContextInitializer
+[main] INFO PTRACER - [ptracer] govern server address: null
+ PTRACER [TRACE] 启动完毕.
+================================================================================================
+[m
+
+16:17:50.836 [main] INFO  c.p.a.a.c.p.i.DefaultCorePluginManager - [allspark-agent] - loading plugin, plugin=allspark-arthas;class=com.pdd.arch.allspark.plugin.arthas.ArthasPlugin;plugin-jar=allspark-arthas.jar;
+16:17:50.964 [main] INFO  c.p.a.a.c.p.i.DefaultCorePluginManager - [allspark-agent] - active plugin when OnLoad, plugin=allspark-arthas
+16:17:50.964 [main] INFO  c.p.a.a.c.p.i.DefaultCorePluginManager - [allspark-agent] - active plugin, plugin=allspark-arthas;class=com.pdd.arch.allspark.plugin.arthas.ArthasPlugin;plugin-jar=allspark-arthas.jar;
+16:17:51.106 [main] INFO  c.p.a.a.core.plugin.CorePlugin - [allspark-agent] - [allspark]build an event builder.
+16:17:51.324 [main] INFO  c.p.a.a.c.s.DefaultModuleEventWatcher - [allspark-agent] - watch=1000 in plugin=allspark-arthas found 0 classes for watch(ing).
+16:17:51.349 [main] INFO  c.p.a.a.core.plugin.CorePlugin - [allspark-agent] - [allspark]build an event builder.
+16:17:51.420 [main] INFO  c.p.a.a.c.s.DefaultModuleEventWatcher - [allspark-agent] - watch=1002 in plugin=allspark-arthas found 0 classes for watch(ing).
+16:17:51.806 [main] INFO  c.p.a.a.c.e.w.EventListenerHandler - [allspark-agent] - activated listener[id=1001;target=com.pdd.arch.allspark.plugin.arthas.ArthasPlugin$TomcatStartListener@55cb6996;] event=BEFORE
+16:17:51.806 [main] INFO  c.p.a.a.c.e.w.EventListenerHandler - [allspark-agent] - activated listener[id=1001;target=com.pdd.arch.allspark.plugin.arthas.ArthasPlugin$TomcatStartListener@55cb6996;] event=BEFORE
+[allspark-agent] Agent is started.
+[main] INFO PTRACER - [Injector.Match] 增强该类:class org.springframework.boot.loader.Launcher
+[main] INFO PTRACER - [Injector.Match] 增强该类:class org.springframework.web.client.RestTemplate
+[main] INFO PTRACER - [Injector.Match] 增强该类:class org.springframework.boot.SpringApplication
+[main] INFO PTRACER - [Injector.Match] 增强该类:class org.apache.logging.log4j.ThreadContext
+[main] INFO PTRACER - [IRIS] 启动 PALS-TICKET 有效性检查
+[main] INFO PTRACER - [IRIS] PALS-TICKET Local ticket loaded, issue at Fri Jan 26 16:17:43 CST 2024, ticket will be expired at Sun Jan 26 16:17:43 CST 2025
+[main] INFO PTRACER - [Injector.Match] 增强该类:class com.dianping.cat.Cat
+[Cat-ThreadPoolMetric] INFO PTRACER - [Injector.Match] 增强该类:class com.pinduoduo.arch.roc.RocModules
+[main] INFO PTRACER - [iris] set application's cat in agent context.
+[Cat-ThreadPoolMetric] INFO PTRACER - [iris] set application's roc in agent context.
+sevice key: logbus.service.bg-grana-api hostgroup key: logbus.hostgroup.bg-grana-api-us-usm1
+{hkm2-tiger-loga-kf=org.apache.logging.log4j.core.config.logbus.LogbusKafkaCluster@69d45cca, vam1-tiger-log-kf=org.apache.logging.log4j.core.config.logbus.LogbusKafkaCluster@2fdf17dc, sht5-tiger-log-kf=org.apache.logging.log4j.core.config.logbus.LogbusKafkaCluster@6e6d4780, vam1-tiger-logz-kf=org.apache.logging.log4j.core.config.logbus.LogbusKafkaCluster@650ae78c, hkm2-tiger-logflinka-kf=org.apache.logging.log4j.core.config.logbus.LogbusKafkaCluster@2e73d5eb, sht5-tiger-logflinka-kf=org.apache.logging.log4j.core.config.logbus.LogbusKafkaCluster@79c5460e, vam1-tiger-logflinka-kf=org.apache.logging.log4j.core.config.logbus.LogbusKafkaCluster@7d904ff1, vam1-tiger-logknock-kf=org.apache.logging.log4j.core.config.logbus.LogbusKafkaCluster@4f94e148, vam1-tiger-logoa-kf=org.apache.logging.log4j.core.config.logbus.LogbusKafkaCluster@7ff8a9dc, sht5-tiger-logpmma-kf=org.apache.logging.log4j.core.config.logbus.LogbusKafkaCluster@2cde651b, vam1-tiger-logpmma-kf=org.apache.logging.log4j.core.config.logbus.LogbusKafkaCluster@534e58b6, sht5-tiger-loga-kf=org.apache.logging.log4j.core.config.logbus.LogbusKafkaCluster@3bb87d36, vam1-tiger-loga-kf=org.apache.logging.log4j.core.config.logbus.LogbusKafkaCluster@1b495d4, hkm2-tiger-logb-kf=org.apache.logging.log4j.core.config.logbus.LogbusKafkaCluster@5e1dde44, vam1-tiger-logb-kf=org.apache.logging.log4j.core.config.logbus.LogbusKafkaCluster@7f37b6d9, iem3-tiger-loga-kf=org.apache.logging.log4j.core.config.logbus.LogbusKafkaCluster@71e35c4, edge-us-tiger=org.apache.logging.log4j.core.config.logbus.LogbusKafkaCluster@22a10ac6, vam1-tiger-paymentpcilog-kf=org.apache.logging.log4j.core.config.logbus.LogbusKafkaCluster@12fe1f28, scg1-tiger-loga-kf=org.apache.logging.log4j.core.config.logbus.LogbusKafkaCluster@503df2d0, scg1-tiger-logbusim-kf=org.apache.logging.log4j.core.config.logbus.LogbusKafkaCluster@26fb4d06}
+DynamicConfigDto{loggerConfigs=[], staticConfig=StaticConfigItem{cluster='vam1-tiger-log-kf', middlewareCluster='null', level='info', topic='pdd-bg-grana-api'}, dynamicConfig=null}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.22.RELEASE)
+
+[main] INFO PTRACER - [Injector.Match] 增强该类:class com.pdd.iris.spring.filter.IrisWebFilter
+load appenv from [/data/webapps/appenv], properties:{monitorkeepergateway=monitor-keeper-gateway.smart.ddns.temu.team, leohttpserver=10.108.8.11:14885, set=usm1, catserver=cat-consumer.cat-consumer-us-usm1.hg.ddns.temu.team, leoserveragent=10.108.8.11:14880, palsserver=auth-server.smart.ddns.temu.team, leo2server=leo2-service.smart.ddns.temu.team, idc=usm1, deployenv=usm1, env=prod, core_ns=10.108.1.99:2021,10.108.1.100:2021,10.108.39.26:2021,10.108.39.27:2021, dr=us, internal_ip=10.110.185.72, hostname=vam1-aknode-42260.host.temu.team, leoserver=10.108.8.11:14880, pddenv=prod, domain=temu.com, dc=vam1} 
+[main] INFO PTRACER - [Injector.Match] 增强该类:class org.apache.http.impl.client.MinimalHttpClient
+[main] INFO PTRACER - [Injector.Match] 增强该类:class org.apache.http.impl.client.InternalHttpClient
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:18:01.347  WARN 1 [           main] o.s.c.a.ConfigurationClassPostProcessor  : [] Cannot enhance @Configuration bean definition 'managementDatasource' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:18:01.751  WARN 1 [           main] o.s.c.a.ConfigurationClassEnhancer       : [] @Bean method GavinClientConfig.gavinApplicationListener is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+[main] INFO PTRACER - [Injector.Match] 增强该类:class com.alibaba.dubbo.rpc.filter.ConsumerContextFilter
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:18:03.162  WARN 1 [           main] s.c.p.a.p.c.c.PNSConfigSource            : [] [ConfigSource] the final config object is null. Query key is [ConfigKey(key=pns-client.secret.app.bg-grana-api, defaultValue=null, autoRefresh=true, converter=sentinel.com.pinduoduo.arch.pns.common.config.ConfigKey$$Lambda$175/1341812801@70c31b17, listeners=[], readFrom=65535, source=null, required=false)]
+[main] INFO PTRACER - [Injector.Match] 增强该类:class com.pdd.iris.dubbo.filter.IrisDubboFilter
+16:18:09.238 [main] INFO  c.p.a.a.c.s.SandboxClassFileTransformer - [allspark-agent] - transform org/springframework/boot/context/embedded/tomcat/TomcatEmbeddedServletContainer finished, by plugin=allspark-arthas in loader=org.springframework.boot.loader.LaunchedURLClassLoader@59d2400d
+[main] INFO PTRACER - [Injector.Match] 增强该类:class org.apache.catalina.core.StandardWrapperValve
+[localhost-startStop-1] INFO PTRACER - [iris] set application's cat in agent context.
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:18:10.864  WARN 1 [           main] d.c.p.a.p.c.c.PNSConfigSource            : [] [ConfigSource] the final config object is null. Query key is [ConfigKey(key=pns-client.secret.app.bg-grana-api, defaultValue=null, autoRefresh=true, converter=dubbo.com.pinduoduo.arch.pns.common.config.ConfigKey$$Lambda$278/571309751@1c000c2f, listeners=[], readFrom=65535, source=null, required=false)]
+[main] INFO PTRACER - [Injector.Match] 增强该类:class com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler
+[main] INFO PTRACER - [Injector.Match] 增强该类:class com.alibaba.dubbo.remoting.transport.dispatcher.all.AllChannelHandler
+[main] INFO PTRACER - [Injector.Match] 增强该类:class com.mysql.jdbc.PreparedStatement
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:18:15.388  WARN 1 [           main] c.d.z.z.FlowControlChangeListener        : [] leoKey[699f22ce6043698bf106017d23d57518dd9b9800cb9b1c6a7149e8fddf61700a105bfb6d0f1606c30fee98e073a5c28059126d316d7b95382c646f435c66a5ad7f144114e86d96c17af605d873683b0a8272f4d678a0d3a7a8c222cf1e30b1580bbdc0e54b99b192496d6a165e60aac0]'s flowControlLeoKey is empty, should init from old config
+[main] INFO PTRACER - [Injector.Match] 增强该类:class org.apache.ibatis.executor.BaseExecutor
+[main] INFO PTRACER - [Injector.Match] 增强该类:class com.dianping.zebra.group.jdbc.GroupPreparedStatement
+[main] INFO PTRACER - Detected zebra-api version: 3.8.3.RC3, skip the taishan traffic check: true
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:18:22.132  WARN 1 [           main] c.p.a.p.c.c.PNSConfigSource              : [] [ConfigSource] the final config object is null. Query key is [ConfigKey(key=pns-client.secret.app.bg-grana-api, defaultValue=null, autoRefresh=true, converter=com.pinduoduo.arch.pns.common.config.ConfigKey$$Lambda$454/540048569@2fb006dc, listeners=[], readFrom=65535, source=null, required=false)]
+[main] INFO PTRACER - [Injector.Match] 增强该类:class org.apache.http.impl.client.AbstractHttpClient
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:18:23.692  WARN 1 [           main] c.p.a.d.r.PnsRegistry                    : []  [DUBBO] [PnsRegistry] Subscribed provider node is empty, consumer url = [consumer://10.110.184.175/com.pdd.bigdata.risk.docking.contract.AntiCrawlerMonitorService?application=bg-grana-api&category=routers,configurators,providers&check=false&default.group=us-default&directoryId=10010&dubbo=2.16.1.RELEASE&interface=com.pdd.bigdata.risk.docking.contract.AntiCrawlerMonitorService&lazy=true&methods=getApiInfo&pid=1&retries=0&side=consumer&timestamp=1706257103678], dubbo version: 2.16.1.RELEASE, current host: 10.110.184.175
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:18:27.968  WARN 1 [           main] c.d.z.z.FlowControlChangeListener        : [] leoKey[699f22ce6043698bf106017d23d575189bec3a638a40db69d695e4524528596b7e08d13c5d483e4c9fc3451ab2e04029ea6693db305146b5053a340bc6f9f642a6da47ce84e7ef9271862426b574829916eb2530792e3af842cdd85a912fa54ad9b5fcec359da86316b906ed449c3740]'s flowControlLeoKey is empty, should init from old config
+[main] INFO PTRACER - [Injector.Match] 增强该类:class com.yiran.arch.gavin.client.spring.GavinAnnotationTaskHandler
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:18:29.934  WARN 1 [           main] c.p.a.p.c.c.PNSConfigSource              : [] [ConfigSource] the final config object is null. Query key is [ConfigKey(key=pns-client.secret.app.bg-grana-api, defaultValue=null, autoRefresh=true, converter=com.pinduoduo.arch.pns.common.config.ConfigKey$$Lambda$454/540048569@2fb006dc, listeners=[], readFrom=65535, source=null, required=false)]
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:18:30.114  WARN 1 [           main] c.p.a.p.c.c.PNSConfigSource              : [] [ConfigSource] the final config object is null. Query key is [ConfigKey(key=pns-client.secret.app.bg-grana-api, defaultValue=null, autoRefresh=true, converter=com.pinduoduo.arch.pns.common.config.ConfigKey$$Lambda$454/540048569@2fb006dc, listeners=[], readFrom=65535, source=null, required=false)]
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:18:30.187  WARN 1 [           main] c.p.a.p.c.c.PNSConfigSource              : [] [ConfigSource] the final config object is null. Query key is [ConfigKey(key=pns-client.secret.app.bg-grana-api, defaultValue=null, autoRefresh=true, converter=com.pinduoduo.arch.pns.common.config.ConfigKey$$Lambda$454/540048569@2fb006dc, listeners=[], readFrom=65535, source=null, required=false)]
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:18:30.466  WARN 1 [           main] c.p.a.p.c.c.PNSConfigSource              : [] [ConfigSource] the final config object is null. Query key is [ConfigKey(key=pns-client.secret.app.bg-grana-api, defaultValue=null, autoRefresh=true, converter=com.pinduoduo.arch.pns.common.config.ConfigKey$$Lambda$454/540048569@2fb006dc, listeners=[], readFrom=65535, source=null, required=false)]
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:18:30.638  WARN 1 [           main] c.p.a.p.c.c.PNSConfigSource              : [] [ConfigSource] the final config object is null. Query key is [ConfigKey(key=pns-client.secret.app.bg-grana-api, defaultValue=null, autoRefresh=true, converter=com.pinduoduo.arch.pns.common.config.ConfigKey$$Lambda$454/540048569@2fb006dc, listeners=[], readFrom=65535, source=null, required=false)]
+[main] INFO PTRACER - [Injector.Match] 增强该类:class com.pinduoduo.arch.tiger.listener.DefaultConcurrentlyMessageListener
+[main] INFO PTRACER - [Injector.Match] 增强该类:class org.springframework.core.task.SimpleAsyncTaskExecutor
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:18:32.397  WARN 1 [      Finalizer] c.a.d.c.AbstractInterfaceConfig          : []  [DUBBO] ReferenceConfig(null) is not DESTROYED when FINALIZE, dubbo version: 2.16.1.RELEASE, current host: 10.110.184.175
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:18:32.397  WARN 1 [      Finalizer] c.a.d.c.AbstractInterfaceConfig          : []  [DUBBO] ReferenceConfig(null) is not DESTROYED when FINALIZE, dubbo version: 2.16.1.RELEASE, current host: 10.110.184.175
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:18:32.397  WARN 1 [      Finalizer] c.a.d.c.AbstractInterfaceConfig          : []  [DUBBO] ReferenceConfig(null) is not DESTROYED when FINALIZE, dubbo version: 2.16.1.RELEASE, current host: 10.110.184.175
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:18:32.397  WARN 1 [      Finalizer] c.a.d.c.AbstractInterfaceConfig          : []  [DUBBO] ReferenceConfig(null) is not DESTROYED when FINALIZE, dubbo version: 2.16.1.RELEASE, current host: 10.110.184.175
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:18:32.397  WARN 1 [      Finalizer] c.a.d.c.AbstractInterfaceConfig          : []  [DUBBO] ReferenceConfig(null) is not DESTROYED when FINALIZE, dubbo version: 2.16.1.RELEASE, current host: 10.110.184.175
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:18:32.397  WARN 1 [      Finalizer] c.a.d.c.AbstractInterfaceConfig          : []  [DUBBO] ReferenceConfig(null) is not DESTROYED when FINALIZE, dubbo version: 2.16.1.RELEASE, current host: 10.110.184.175
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:18:32.397  WARN 1 [      Finalizer] c.a.d.c.AbstractInterfaceConfig          : []  [DUBBO] ReferenceConfig(null) is not DESTROYED when FINALIZE, dubbo version: 2.16.1.RELEASE, current host: 10.110.184.175
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:18:32.397  WARN 1 [      Finalizer] c.a.d.c.AbstractInterfaceConfig          : []  [DUBBO] ReferenceConfig(null) is not DESTROYED when FINALIZE, dubbo version: 2.16.1.RELEASE, current host: 10.110.184.175
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:18:32.397  WARN 1 [      Finalizer] c.a.d.c.AbstractInterfaceConfig          : []  [DUBBO] ReferenceConfig(null) is not DESTROYED when FINALIZE, dubbo version: 2.16.1.RELEASE, current host: 10.110.184.175
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:18:32.397  WARN 1 [      Finalizer] c.a.d.c.AbstractInterfaceConfig          : []  [DUBBO] ReferenceConfig(null) is not DESTROYED when FINALIZE, dubbo version: 2.16.1.RELEASE, current host: 10.110.184.175
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:18:32.397  WARN 1 [      Finalizer] c.a.d.c.AbstractInterfaceConfig          : []  [DUBBO] ReferenceConfig(null) is not DESTROYED when FINALIZE, dubbo version: 2.16.1.RELEASE, current host: 10.110.184.175
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:18:32.397  WARN 1 [      Finalizer] c.a.d.c.AbstractInterfaceConfig          : []  [DUBBO] ReferenceConfig(null) is not DESTROYED when FINALIZE, dubbo version: 2.16.1.RELEASE, current host: 10.110.184.175
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:18:32.397  WARN 1 [      Finalizer] c.a.d.c.AbstractInterfaceConfig          : []  [DUBBO] ReferenceConfig(null) is not DESTROYED when FINALIZE, dubbo version: 2.16.1.RELEASE, current host: 10.110.184.175
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:18:32.397  WARN 1 [      Finalizer] c.a.d.c.AbstractInterfaceConfig          : []  [DUBBO] ReferenceConfig(null) is not DESTROYED when FINALIZE, dubbo version: 2.16.1.RELEASE, current host: 10.110.184.175
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:18:32.397  WARN 1 [      Finalizer] c.a.d.c.AbstractInterfaceConfig          : []  [DUBBO] ReferenceConfig(null) is not DESTROYED when FINALIZE, dubbo version: 2.16.1.RELEASE, current host: 10.110.184.175
+16:18:35.774 [main] INFO  c.p.a.a.c.e.w.EventListenerHandler - [allspark-agent] - frozen listener[id=1001;target=com.pdd.arch.allspark.plugin.arthas.ArthasPlugin$TomcatStartListener@55cb6996;]
+16:18:36.111 [main] INFO  c.p.a.a.c.s.DefaultModuleEventWatcher - [allspark-agent] - watch=1000 in plugin=allspark-arthas found 1 classes for delete.
+16:18:36.238 [main] INFO  c.p.a.a.c.s.DefaultModuleEventWatcher - [allspark-agent] - watch=1000 in module=allspark-arthas single reTransform class org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer success, at index=0;total=1;cost=126ms
+16:18:36.452 [main] INFO  c.p.a.a.c.s.DefaultModuleEventWatcher - [allspark-agent] - watch=1002 in plugin=allspark-arthas found 0 classes for delete.
+16:18:39.790 [Thread-3] INFO  c.p.a.pals.core.key.PublicKeyManager - [allspark-agent] - [PALS] Public keys loaded from /opt/pdd/auth/
+16:18:39.790 [Thread-3] INFO  c.p.a.pals.core.key.PublicKeyManager - [allspark-agent] - [PALS] Public key added, key id: auth#skp#1675664400780#GOU5kfg
+16:18:39.790 [Thread-3] INFO  c.p.a.pals.core.key.PublicKeyManager - [allspark-agent] - [PALS] Public key added, key id: auth#skp#1677053243089#ZkcjOFQ
+16:18:39.790 [Thread-3] INFO  c.p.a.pals.core.key.PublicKeyManager - [allspark-agent] - [PALS] Public key added, key id: auth#1639052714636#3rF_XXo
+16:18:39.790 [Thread-3] INFO  c.p.a.pals.core.key.PublicKeyManager - [allspark-agent] - [PALS] Public keys reloaded, current key set [auth#skp#1675664400780#GOU5kfg, auth#skp#1677053243089#ZkcjOFQ, auth#1639052714636#3rF_XXo]
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:19:02.185  WARN 1 [ol-54-thread-20] c.p.t.c.l.c.f.j.d.e.Java7Handlers        : [] Unable to load JDK7 types (java.nio.file.Path): no Java7 type support added
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:21:39.548  WARN 1 [l-54-thread-275] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 379, 0, cp_order_plant_tree+rt_order_plant_tree_entrance+37
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:21:45.032  WARN 1 [l-54-thread-279] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 377, 0, cp_page_order_display_pay_methods+rt_page_order_display_pay_methods+144
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:23:06.284  WARN 1 [l-54-thread-119] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 378, 0, cp_bg_order_url_parse+rt_bg_order_url_parse_ticket+211
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:23:07.174  WARN 1 [l-54-thread-119] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 378, 0, cp_hat_trick_free_goods+rt_mobile_verify_group_cp_hat_trick_free_goods+128
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:23:07.955  WARN 1 [l-54-thread-119] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 378, 0, cp_pre_order+rt_pre_order_sdk_check+37
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:23:08.431  WARN 1 [l-54-thread-119] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 378, 0, cp_pay_card_fail_retry+rt_pay_card_fail_retry+100
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:23:09.001  WARN 1 [l-54-thread-119] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 378, 0, cp_item_not_rcv_refund+rt_item_not_rcv_refund_create_tkt_pre_check+211
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:23:13.875  WARN 1 [l-54-thread-167] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 378, 1, cp_bg_order_url_parse+rt_bg_order_url_parse_ticket+211
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:23:14.794  WARN 1 [l-54-thread-167] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 378, 1, cp_hat_trick_free_goods+rt_mobile_verify_group_cp_hat_trick_free_goods+128
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:23:15.581  WARN 1 [l-54-thread-167] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 378, 1, cp_pre_order+rt_pre_order_sdk_check+37
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:23:16.085  WARN 1 [l-54-thread-167] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 378, 1, cp_pay_card_fail_retry+rt_pay_card_fail_retry+100
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:23:16.651  WARN 1 [l-54-thread-167] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 378, 1, cp_item_not_rcv_refund+rt_item_not_rcv_refund_create_tkt_pre_check+211
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:26:05.271  WARN 1 [ol-54-thread-51] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 377, 0, cp_buy_x_free_x+rt_entrance_cp_buy_x_free_x_dubbo+12
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:26:08.068  WARN 1 [ol-54-thread-51] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 377, 0, cp_buy_x_free_x+rt_multi_entrance_cp_buy_x_free_x+12
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:26:09.169  WARN 1 [l-54-thread-140] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 5, 0, cp_buy_x_minus_y+rt_entrance_cp_buy_x_minus_y
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:26:09.860  WARN 1 [l-54-thread-155] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 379, 0, cp_afs_refund_channel+cp_afs_refund_channel_display_check+211
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:26:09.928  WARN 1 [ol-54-thread-51] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 377, 0, cp_afs_zpg_usr_app_compensation+rt_item_not_rcv_zpg_usr_app_compensation_check+211
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:31:06.492  WARN 1 [ool-54-thread-6] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 4, 0, cp_afs_refund_channel+cp_afs_refund_channel_recheck
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:31:10.237  WARN 1 [l-54-thread-126] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 378, 1, cp_pre_order+rt_pre_order_sdk_check+100
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:31:11.032  WARN 1 [l-54-thread-126] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 378, 1, cp_refund_without_return+rt_refund_without_return_pre_check+211
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:31:11.598  WARN 1 [l-54-thread-126] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 378, 1, cp_item_not_rcv_refund+rt_item_not_rcv_refund_chat_robot_pre_check+211
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:31:12.047  WARN 1 [l-54-thread-126] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 378, 1, cp_item_not_rcv_refund+rt_item_not_rcv_refund_create_tkt_pre_check+12
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:31:12.499  WARN 1 [l-54-thread-126] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 378, 1, cp_bg_login+rt_bg_login_query_user_info+100
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:31:12.529  WARN 1 [ol-54-thread-89] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 378, 0, cp_pre_order+rt_pre_order_sdk_check+100
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:31:12.915  WARN 1 [l-54-thread-126] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 378, 1, cp_pre_order+rt_pre_order_sdk_check+12
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:31:13.304  WARN 1 [ol-54-thread-89] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 378, 0, cp_refund_without_return+rt_refund_without_return_pre_check+211
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:31:13.603  WARN 1 [l-54-thread-126] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 378, 1, cp_afs_wrong_package_rfnd+rt_afs_wrong_package_rfnd_vip_judge+-
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:31:13.804  WARN 1 [ol-54-thread-89] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 378, 0, cp_item_not_rcv_refund+rt_item_not_rcv_refund_chat_robot_pre_check+211
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:31:14.256  WARN 1 [ool-54-thread-9] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 379, 0, cp_afs_refund_channel+cp_afs_refund_channel_recheck+211
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:31:14.296  WARN 1 [ol-54-thread-89] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 378, 0, cp_item_not_rcv_refund+rt_item_not_rcv_refund_create_tkt_pre_check+12
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:31:14.751  WARN 1 [ol-54-thread-89] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 378, 0, cp_bg_login+rt_bg_login_query_user_info+100
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:31:15.166  WARN 1 [ol-54-thread-89] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 378, 0, cp_pre_order+rt_pre_order_sdk_check+12
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:31:15.779  WARN 1 [ol-54-thread-89] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 378, 0, cp_afs_wrong_package_rfnd+rt_afs_wrong_package_rfnd_vip_judge+-
+leo key bat2-client.proxy.endpoints.risk-lapins-default-us-322 changed key list: [logbus.default.kafka_cluster, logbus.service.bg-grana-api, logbus.hostgroup.bg-grana-api-us-usm1]
+reload log4j config DynamicConfigDto{loggerConfigs=[], staticConfig=StaticConfigItem{cluster='vam1-tiger-log-kf', middlewareCluster='null', level='info', topic='pdd-bg-grana-api'}, dynamicConfig=null}
+leo key bat2-client.proxy.endpoints.risk-lapins-crawler-us-324 changed key list: [logbus.default.kafka_cluster, logbus.service.bg-grana-api, logbus.hostgroup.bg-grana-api-us-usm1]
+reload log4j config DynamicConfigDto{loggerConfigs=[], staticConfig=StaticConfigItem{cluster='vam1-tiger-log-kf', middlewareCluster='null', level='info', topic='pdd-bg-grana-api'}, dynamicConfig=null}
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:36:07.879  WARN 1 [l-54-thread-219] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 379, 0, cp_page_order_display_pay_methods+rt_page_order_display_pay_methods+128
+leo key bat2-client.proxy.endpoints.risk-lapins-crawler-us-324 changed key list: [logbus.default.kafka_cluster, logbus.service.bg-grana-api, logbus.hostgroup.bg-grana-api-us-usm1]
+reload log4j config DynamicConfigDto{loggerConfigs=[], staticConfig=StaticConfigItem{cluster='vam1-tiger-log-kf', middlewareCluster='null', level='info', topic='pdd-bg-grana-api'}, dynamicConfig=null}
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:37:50.948  WARN 1 [l-54-thread-159] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 6, 0, cp_fishpond+rt_within_group_cp_fishpond+rule_pddid_in_large_community_v3
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:38:10.087  WARN 1 [l-54-thread-159] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 6, 0, cp_fishpond+rt_within_group_cp_fishpond+rule_uid_in_large_community_v3
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:38:21.475  WARN 1 [geSender-Task-1] c.d.c.m.i.Client                         : [] [Cat-Trace] Error when connect server: /10.152.224.150
+io.netty.channel.ConnectTimeoutException: connection timed out: /10.152.224.150:16666
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe$1.run(AbstractNioChannel.java:267) 
+	at io.netty.util.concurrent.PromiseTask$RunnableAdapter.call(PromiseTask.java:38) 
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:120) 
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163) 
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:403) 
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:463) 
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) 
+	at java.lang.Thread.run(Thread.java:748) 
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:38:34.804  WARN 1 [  Cat-Scheduler] c.d.c.m.i.Client                         : [] [Cat-Trace] Error when connect server: /10.153.100.207
+io.netty.channel.ConnectTimeoutException: connection timed out: /10.153.100.207:16666
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe$1.run(AbstractNioChannel.java:267) 
+	at io.netty.util.concurrent.PromiseTask$RunnableAdapter.call(PromiseTask.java:38) 
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:120) 
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163) 
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:403) 
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:463) 
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) 
+	at java.lang.Thread.run(Thread.java:748) 
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:39:04.794  WARN 1 [l-54-thread-194] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 378, 0, cp_chargeback_operation+rt_chargeback_alert+211
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:39:04.869  WARN 1 [l-54-thread-194] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 378, 0, cp_sms_send_result+rt_sms_send_result+42
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:39:05.232  WARN 1 [l-54-thread-299] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 378, 1, cp_chargeback_operation+rt_chargeback_alert+211
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:39:05.311  WARN 1 [l-54-thread-194] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 378, 0, cp_bg_order_url_parse+rt_bg_order_url_parse_ticket+211
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:39:05.352  WARN 1 [l-54-thread-299] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 378, 1, cp_sms_send_result+rt_sms_send_result+42
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:39:05.684  WARN 1 [l-54-thread-299] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 378, 1, cp_bg_order_url_parse+rt_bg_order_url_parse_ticket+211
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:39:05.724  WARN 1 [l-54-thread-194] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 378, 0, cp_bg_login+rt_bg_login_query_user_info+12
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:39:05.981  WARN 1 [l-54-thread-194] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 378, 0, cp_operate_audit_desk_mark+rt_operate_audit_desk_mark+211
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:39:06.103  WARN 1 [l-54-thread-299] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 378, 1, cp_bg_login+rt_bg_login_query_user_info+12
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:39:06.365  WARN 1 [l-54-thread-299] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 378, 1, cp_operate_audit_desk_mark+rt_operate_audit_desk_mark+211
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:39:06.640  WARN 1 [l-54-thread-194] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 378, 0, cp_bg_login+rt_bg_login_query_user_info+144
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:39:07.017  WARN 1 [l-54-thread-299] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 378, 1, cp_bg_login+rt_bg_login_query_user_info+144
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:39:07.154  WARN 1 [l-54-thread-194] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 378, 0, cp_fishpond+rt_within_group_cp_fishpond+128
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:39:07.574  WARN 1 [l-54-thread-299] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 378, 1, cp_fishpond+rt_within_group_cp_fishpond+128
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:39:07.618  WARN 1 [l-54-thread-194] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 378, 0, cp_refund_without_return+rt_refund_without_return_pre_check+128
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:39:07.997  WARN 1 [l-54-thread-299] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 378, 1, cp_refund_without_return+rt_refund_without_return_pre_check+128
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:39:09.836  WARN 1 [  Cat-Scheduler] c.d.c.m.i.Client                         : [] [Cat-Trace] Error when connect server: /10.153.24.116
+io.netty.channel.ConnectTimeoutException: connection timed out: /10.153.24.116:16666
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe$1.run(AbstractNioChannel.java:267) 
+	at io.netty.util.concurrent.PromiseTask$RunnableAdapter.call(PromiseTask.java:38) 
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:120) 
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163) 
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:403) 
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:463) 
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) 
+	at java.lang.Thread.run(Thread.java:748) 
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:40:49.787  WARN 1 [l-54-thread-208] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 6, 0, cp_fishpond+rt_win_1000_entrance_cp_fishpond+rgroup_assit_high_accuracy
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:40:50.541  WARN 1 [l-54-thread-208] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 6, 0, cp_pay_channel_message_report+rt_pay_channel_message_report_refund+rule_stripe_message_report
+bg-grana-api-us-usm1z-5z6hm bg-grana-api 2024-01-26 16:40:57.612  WARN 1 [l-54-thread-208] c.p.b.g.c.m.s.RuleCalcService            : [] Not trigger continuous alarm threshold, 6, 0, cp_fishpond+rt_win_1000_entrance_cp_fishpond+1#rgroup_assit_high_accuracy
